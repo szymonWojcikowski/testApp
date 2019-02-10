@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Revalia&subset=latin-ext');
+@import "../../scss/_var";
+@import "../../scss/breakpoints";
+
+
+ul {
+  margin-block-start: 0;
+  li {
+    list-style: none;
+    min-width: 120px;
+    padding: 1rem;
+    background-color: $menuColor;
+    border-bottom: 2px ridge lighten($menuColor, 20);
+    border-left: 2px dotted lighten($menuColor, 20);
+    @include for-size(tablet-portrait-up) {
+      width: calc(100% / #{$menuChaptersNr});
+      float: left;
+      //padding-inline-start: 0;
+    }
+    &:first-of-type {
+      border-left: 0px dotted darken($menuColor, 10);
+    }
+    a {
+      font-family: 'Revalia', cursive;
+      font-size: 1.5rem;
+      color: $menuLinksColor;
+      text-decoration: none;
+    }
+    .active {
+      color: $darkBoxColor;
+    }
+  }
+}

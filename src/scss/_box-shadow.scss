@@ -1,0 +1,17 @@
+@mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $offset-x $offset-y $blur-radius $spread-radius $color;
+    -moz-box-shadow: inset $offset-x $offset-y $blur-radius $spread-radius $color;
+    box-shadow: inset $offset-x $offset-y $blur-radius $spread-radius $color;
+  }
+  @else {
+    -webkit-box-shadow: $offset-x $offset-y $blur-radius $spread-radius $color;
+    -moz-box-shadow: $offset-x $offset-y $blur-radius $spread-radius $color;
+    box-shadow: $offset-x $offset-y $blur-radius $spread-radius $color;
+  }
+}
+
+//  --- usage ---
+//div {
+//  @include box-shadow(0, 0, 0, 4px, #000);
+//}
