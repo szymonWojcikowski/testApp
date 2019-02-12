@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: "out.js",
         path: path.resolve(__dirname, "bundle"),
-        publicPath: "/"
+        publicPath: ""
     },
     devServer: {
         inline: true,
