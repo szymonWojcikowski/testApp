@@ -7,7 +7,7 @@ module.exports = {
     entry: "./src/App.jsx",
     output: {
         filename: "out.js",
-        path: path.resolve(__dirname, ""),
+        path: path.resolve(__dirname, "app"),
         publicPath: ""
     },
     devServer: {
