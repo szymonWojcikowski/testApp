@@ -21,7 +21,7 @@ const Contact = () => (
 
 const App = () => {
     return (
-            <HashRouter>
+            <BrowserRouter>
                 <>
                 <Menu />
                 <Switch>
@@ -29,7 +29,7 @@ const App = () => {
                     <Route path="/projects" component={WeekPlannerApp} />
                 </Switch>
                 </>
-            </HashRouter>
+            </BrowserRouter>
     );
 };
 
