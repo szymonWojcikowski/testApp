@@ -27974,7 +27974,7 @@ var Menu = function Menu() {
     dropdown: false
   }, {
     name: "WeekPlanner",
-    url: "https://szymonwojcikowski.github.io/weekPlanner/",
+    url: "/weekPlanner/",
     exact: true
   }, {
     name: "About",

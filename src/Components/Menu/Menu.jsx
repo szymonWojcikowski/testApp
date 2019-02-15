@@ -23,7 +23,7 @@ import {
 const Menu = () => {
     const links = [
         { name: "Tech stack", url: "/", exact: true, dropdown: false },
-        { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true },
+        { name: "WeekPlanner", url: "/weekPlanner/", exact: true },
         { name: "About", url: "/about", exact: false, dropdown: false }
     ];
 
