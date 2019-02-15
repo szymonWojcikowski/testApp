@@ -22,11 +22,16 @@ import {
 
 const Menu = () => {
     const links = [
-        { name: "Tech stack", url: "/", exact: true },
-        { name: "Projects", url: "/projects", exact: false },
-        { name: "About", url: "/about", exact: false }
+        { name: "Tech stack", url: "/", exact: true, dropdown: false },
+        { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true },
+        { name: "About", url: "/about", exact: false, dropdown: false }
     ];
-    return (
+
+    // const submenu = [
+    //     { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true }
+    // ];
+
+     return (
             <ul>
                 {links.map(row => (
                     <li key={row.url}>
@@ -63,5 +68,16 @@ const Menu = () => {
 //         </BrowserRouter>
 //     );
 // };
+
+// {row.dropdown ? <ul className="dropdown">{submenu.map(row => (
+//     <li key={row.url}>
+//         <NavLink
+//             exact={row.exact}
+//             to={row.url}
+//         >{row.name}</NavLink>
+//     </li>))}</ul> : row.name}
+
+
+
 
 export default Menu;

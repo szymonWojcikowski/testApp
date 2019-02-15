@@ -12,7 +12,7 @@ import {
 
 import TechStackBox from './Components/TechStackBox/TechStackBox.jsx';
 import Menu from './Components/Menu/Menu.jsx';
-import WeekPlannerApp from './projects/WeekPlannerApp/src/WeekPlannerApp.jsx';
+// import WeekPlannerApp from './projects/WeekPlannerApp/src/WeekPlannerApp.jsx';
 
 const Contact = () => (
     <div>Kontakt</div>
@@ -26,7 +26,6 @@ const App = () => {
                 <Menu />
                 <Switch>
                     <Route exact path="/" component={TechStackBox} />
-                    <Route path="/projects" component={WeekPlannerApp} />
                 </Switch>
                 </>
             </BrowserRouter>
