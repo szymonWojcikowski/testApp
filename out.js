@@ -27966,7 +27966,7 @@ var Menu = function Menu() {
   //     { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true }
   // ];
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://szymonwojcikowski.github.io/techStack"
+    href: "https://szymonwojcikowski.github.io/techstack"
   }, "TechStack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/weekPlanner",
     target: "blank"
