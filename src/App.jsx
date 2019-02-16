@@ -14,19 +14,13 @@ import TechStackBox from './Components/TechStackBox/TechStackBox.jsx';
 import Menu from './Components/Menu/Menu.jsx';
 // import WeekPlannerApp from './projects/WeekPlannerApp/src/WeekPlannerApp.jsx';
 
-const Contact = () => (
-    <div>Kontakt</div>
-);
-{/*exact albo exact={true}*/}
 
 const App = () => {
     return (
             <BrowserRouter>
                 <>
                 <Menu />
-                <Switch>
-                    <Route exact path="/" component={TechStackBox} />
-                </Switch>
+                <TechStackBox />
                 </>
             </BrowserRouter>
     );
@@ -40,4 +34,9 @@ document.addEventListener('DOMContentLoaded',
             <App />,
             document.getElementById('root')
         );
-    });
+});
+
+
+{/*<Switch>*/}
+    {/*<Route exact path="/" component={TechStackBox} />*/}
+{/*</Switch>*/}

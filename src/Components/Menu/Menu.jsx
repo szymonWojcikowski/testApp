@@ -10,22 +10,14 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-// import Home from './Components/Home.jsx';
-// import Blog from './Components/Blog.jsx';
-// import Pricing from './Components/Pricing.jsx';
 
-// const activeStyle = {
-//     color: "#75ff08",
-//     transform: "scale(1.4)",
-//     textDecoration: "none",
-// };
 
 const Menu = () => {
-    const links = [
-        { name: "Tech stack", url: "/", exact: true, dropdown: false },
-        { name: "WeekPlanner", url: "/weekPlanner/", exact: true },
-        { name: "About", url: "/about", exact: false, dropdown: false }
-    ];
+    // const links = [
+    //     { name: "Tech stack", url: "/", exact: true, dropdown: false },
+    //     { name: "WeekPlanner", url: "/weekPlanner/", exact: true },
+    //     { name: "About", url: "/about", exact: false, dropdown: false }
+    // ];
 
     // const submenu = [
     //     { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true }
@@ -33,21 +25,14 @@ const Menu = () => {
 
      return (
             <ul>
-                {links.map(row => (
-                    <li key={row.url}>
-                        <NavLink
-                            exact={row.exact}
-                            to={row.url}
-                            >
-                            {row.name}
-                        </NavLink>
-                    </li>
-                ))}
+                <li><a href="https://szymonwojcikowski.github.io/techStack">TechStack</a></li>
+                <li><a href="https://szymonwojcikowski.github.io/weekPlanner/" target="blank">WeekPlanner</a></li>
+                <li><a href="https://szymonwojcikowski.github.io/weekPlannerReactive" target="blank">ReactiveRecreation</a></li>
             </ul>
     );
 };
 
-
+export default Menu;
 
 
 // const App = () => {
@@ -78,6 +63,14 @@ const Menu = () => {
 //     </li>))}</ul> : row.name}
 
 
+// {links.map(row => (
+//     <li key={row.url}>
+//         <NavLink
+//             exact={row.exact}
+//             to={row.url}
+//         >
+//             {row.name}
+//         </NavLink>
+//     </li>
+// ))}
 
-
-export default Menu;
