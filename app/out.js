@@ -27916,25 +27916,22 @@ __webpack_require__.r(__webpack_exports__);
 
  // import WeekPlannerApp from './projects/WeekPlannerApp/src/WeekPlannerApp.jsx';
 
-var Contact = function Contact() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Kontakt");
-};
-
-{
-  /*exact albo exact={true}*/
-}
-
 var App = function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Menu_Menu_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-    exact: true,
-    path: "/",
-    component: _Components_TechStackBox_TechStackBox_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }))));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Menu_Menu_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_TechStackBox_TechStackBox_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 document.addEventListener('DOMContentLoaded', function () {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('root'));
 });
+{
+  /*<Switch>*/
+}
+{
+  /*<Route exact path="/" component={TechStackBox} />*/
+}
+{
+  /*</Switch>*/
+}
 
 /***/ }),
 
@@ -27957,43 +27954,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import Home from './Components/Home.jsx';
-// import Blog from './Components/Blog.jsx';
-// import Pricing from './Components/Pricing.jsx';
-// const activeStyle = {
-//     color: "#75ff08",
-//     transform: "scale(1.4)",
-//     textDecoration: "none",
-// };
+
 
 var Menu = function Menu() {
-  var links = [{
-    name: "Tech stack",
-    url: "/",
-    exact: true,
-    dropdown: false
-  }, {
-    name: "WeekPlanner",
-    url: "/weekPlanner/",
-    exact: true
-  }, {
-    name: "About",
-    url: "/about",
-    exact: false,
-    dropdown: false
-  }]; // const submenu = [
+  // const links = [
+  //     { name: "Tech stack", url: "/", exact: true, dropdown: false },
+  //     { name: "WeekPlanner", url: "/weekPlanner/", exact: true },
+  //     { name: "About", url: "/about", exact: false, dropdown: false }
+  // ];
+  // const submenu = [
   //     { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true }
   // ];
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://szymonwojcikowski.github.io/techStack"
+  }, "TechStack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://szymonwojcikowski.github.io/weekPlanner/",
+    target: "blank"
+  }, "WeekPlanner")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://szymonwojcikowski.github.io/weekPlannerReactive",
+    target: "blank"
+  }, "ReactiveRecreation")));
+};
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, links.map(function (row) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: row.url
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
-      exact: row.exact,
-      to: row.url
-    }, row.name));
-  }));
-}; // const App = () => {
+/* harmony default export */ __webpack_exports__["default"] = (Menu); // const App = () => {
 //     return (
 //         <BrowserRouter>
 //             <Fragment>
@@ -28018,9 +28001,16 @@ var Menu = function Menu() {
 //             to={row.url}
 //         >{row.name}</NavLink>
 //     </li>))}</ul> : row.name}
-
-
-/* harmony default export */ __webpack_exports__["default"] = (Menu);
+// {links.map(row => (
+//     <li key={row.url}>
+//         <NavLink
+//             exact={row.exact}
+//             to={row.url}
+//         >
+//             {row.name}
+//         </NavLink>
+//     </li>
+// ))}
 
 /***/ }),
 
