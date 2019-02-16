@@ -8,7 +8,7 @@ module.exports = {
     entry: "./src/App.jsx",
     output: {
         filename: "out.js",
-        path: path.resolve(__dirname, "app"),
+        path: path.resolve(__dirname, ""),
         publicPath: ""
     },
     devServer: {
@@ -52,7 +52,7 @@ module.exports = {
             filename: "./index.html"
         }),
         new MiniCSS({
-            filename: "app.css",
+            filename: "style.css",
         })
     ]
 };

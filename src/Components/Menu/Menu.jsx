@@ -26,7 +26,7 @@ const Menu = () => {
      return (
             <ul>
                 <li><a href="https://szymonwojcikowski.github.io/techStack">TechStack</a></li>
-                <li><a href="https://szymonwojcikowski.github.io/weekPlanner/" target="blank">WeekPlanner</a></li>
+                <li><a href="https://szymonwojcikowski.github.io/weekPlanner" target="blank">WeekPlanner</a></li>
                 <li><a href="https://szymonwojcikowski.github.io/weekPlannerReactive" target="blank">ReactiveRecreation</a></li>
             </ul>
     );

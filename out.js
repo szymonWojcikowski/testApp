@@ -27968,7 +27968,7 @@ var Menu = function Menu() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/techStack"
   }, "TechStack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://szymonwojcikowski.github.io/weekPlanner/",
+    href: "https://szymonwojcikowski.github.io/weekPlanner",
     target: "blank"
   }, "WeekPlanner")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/weekPlannerReactive",
