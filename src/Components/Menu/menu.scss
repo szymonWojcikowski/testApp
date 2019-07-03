@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Revalia&subset=latin-ext');
-@import "../../scss/_var";
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap&subset=latin-ext');
+@import "../../scss/var";
 @import "../../scss/breakpoints";
+@import '../../scss/box-shadow';
 
 
-ul {
+ul.menu {
   margin-block-start: 0;
+  @include box-shadow(-3px, 3px, 3px, 2px, rgba(0,0,0,0.85));
+
   li {
     list-style: none;
     min-width: 120px;
@@ -12,22 +15,39 @@ ul {
     background-color: $menuColor;
     border-bottom: 2px ridge lighten($menuColor, 20);
     border-left: 2px dotted lighten($menuColor, 20);
-    @include for-size(tablet-portrait-up) {
-      width: calc(100% / #{$menuChaptersNr});
-      float: left;
-      //padding-inline-start: 0;
-    }
+
     &:first-of-type {
       border-left: 0px dotted darken($menuColor, 10);
     }
+    
     a {
-      font-family: 'Revalia', cursive;
+      font-family: 'Play', sans-serif;
       font-size: 1.5rem;
       color: $menuLinksColor;
       text-decoration: none;
     }
+
     .active {
       color: $darkBoxColor;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      width: calc(100% / #{$menuChaptersNr});
+      float: left;
+      padding: 1rem .1rem 1rem .5rem;
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
+    @include for-size(tablet-landscape-up) {
+      width: calc(100% / #{$menuChaptersNr});
+      float: left;
+
+      a {
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -2,51 +2,58 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 @import "../../scss/var";
 @import "../../scss/breakpoints";
-@import '../../scss/_box-shadow.scss';
-
+@import "../../scss/box-shadow";
 
 
 .tech-stack-list {
-}
+  margin-block-start: 0;
 
-code {
-  font-family: 'VT323', monospace;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1rem;
-  strong {
-    font-weight: 700;
+  .dark {
+    background-color: $darkBoxBgColor;
+    color: $darkBoxColor;
+    @include box-shadow(-3px, 3px, 3px, 2px, rgba(0,0,0,0.85));
+  }
+  
+  .box {
+    float: left;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+    border: 2px outset #000;
+    min-width: 200px;
+    height: 190px;
+    text-align: center;
+
+    @include for-size(phone-only) {
+      width: calc(100% / 2);
+      max-width: 320px;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      width: calc(100% / 3);
+      max-width: 320px;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        width: 200px;
+        max-width: 200px;
+    }
+
+    code {
+      font-family: 'VT323', monospace;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 1rem;
+      strong {
+        font-weight: 700;
+      }
+    }
+    
+    i[class^="devicon"] {
+      display: block;
+      width: 4rem;
+      margin: 0 auto 1.2rem;
+      font-size: 4rem;
+      color: $menuLinksColor;
+    }
   }
 }
-
-.dark {
-  background-color: $darkBoxBgColor;
-  color: $darkBoxColor;
-  //-webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
-  //-moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
-  //box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
-  @include box-shadow(-3px, 3px, 3px, 2px, rgba(0,0,0,0.85));
-}
-
-.box {
-  padding: 1rem;
-  margin-top: 1.5rem;
-  margin-left: 2.5rem;
-  border: 2px outset #000;
-  min-width: 200px;
-  height: 190px;
-  text-align: center;
-  @include for-size(tablet-landscape-up) {
-      width: 200px;
-      max-width: 200px;
-  }
-}
-
-i[class^="devicon"] {
-  display: block;
-  width: 4rem;
-  margin: 0 auto 1.2rem;
-  font-size: 4rem;
-  color: $menuLinksColor;
-}
-
-

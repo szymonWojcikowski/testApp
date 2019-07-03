@@ -1,8 +1,5 @@
-import React, { Fragment } from 'react';
-// import ReactDOM from 'react-dom';
-
+import React from 'react';
 import '../../../src/Components/TechStackBox/tech-stack-box.scss';
-// import {BrowserRouter, NavLink} from "react-router-dom";
 
 
 const TechStackBox = () => {

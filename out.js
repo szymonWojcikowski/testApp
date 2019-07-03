@@ -27914,7 +27914,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import WeekPlannerApp from './projects/WeekPlannerApp/src/WeekPlannerApp.jsx';
+
 
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Menu_Menu_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_TechStackBox_TechStackBox_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
@@ -27923,15 +27923,6 @@ var App = function App() {
 document.addEventListener('DOMContentLoaded', function () {
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('root'));
 });
-{
-  /*<Switch>*/
-}
-{
-  /*<Route exact path="/" component={TechStackBox} />*/
-}
-{
-  /*</Switch>*/
-}
 
 /***/ }),
 
@@ -27946,26 +27937,15 @@ document.addEventListener('DOMContentLoaded', function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../src/Components/Menu/menu.scss */ "./src/Components/Menu/menu.scss");
-/* harmony import */ var _src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-
+/* harmony import */ var _src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../src/Components/Menu/menu.scss */ "./src/Components/Menu/menu.scss");
+/* harmony import */ var _src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_Components_Menu_menu_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var Menu = function Menu() {
-  // const links = [
-  //     { name: "Tech stack", url: "/", exact: true, dropdown: false },
-  //     { name: "WeekPlanner", url: "/weekPlanner/", exact: true },
-  //     { name: "About", url: "/about", exact: false, dropdown: false }
-  // ];
-  // const submenu = [
-  //     { name: "WeekPlanner", url: "https://szymonwojcikowski.github.io/weekPlanner/", exact: true }
-  // ];
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "menu"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/techstack"
   }, "TechStack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/weekPlanner",
@@ -27976,41 +27956,7 @@ var Menu = function Menu() {
   }, "ReactiveRecreation")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Menu); // const App = () => {
-//     return (
-//         <BrowserRouter>
-//             <Fragment>
-//                 <header>
-//                     <h1>Witaj na mojej stronie</h1>
-//                     <Menu />
-//                 </header>
-//                 <Switch>
-//                     <Route exact path="/" component={Home} />
-//                     <Route path="/blog" component={Blog} />
-//                     <Route path="/pricing" component={Pricing} />
-//                     <Route path="*" component={NotFound} />
-//                 </Switch>
-//             </Fragment>
-//         </BrowserRouter>
-//     );
-// };
-// {row.dropdown ? <ul className="dropdown">{submenu.map(row => (
-//     <li key={row.url}>
-//         <NavLink
-//             exact={row.exact}
-//             to={row.url}
-//         >{row.name}</NavLink>
-//     </li>))}</ul> : row.name}
-// {links.map(row => (
-//     <li key={row.url}>
-//         <NavLink
-//             exact={row.exact}
-//             to={row.url}
-//         >
-//             {row.name}
-//         </NavLink>
-//     </li>
-// ))}
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 
@@ -28038,9 +27984,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _src_Components_TechStackBox_tech_stack_box_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../src/Components/TechStackBox/tech-stack-box.scss */ "./src/Components/TechStackBox/tech-stack-box.scss");
 /* harmony import */ var _src_Components_TechStackBox_tech_stack_box_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_Components_TechStackBox_tech_stack_box_scss__WEBPACK_IMPORTED_MODULE_1__);
- // import ReactDOM from 'react-dom';
 
- // import {BrowserRouter, NavLink} from "react-router-dom";
+
 
 var TechStackBox = function TechStackBox() {
   var techList = [{
