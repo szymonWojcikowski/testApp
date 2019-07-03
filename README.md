@@ -1,4 +1,3 @@
-# testApp
+# TechStackFolio
 
-* tech stack overview
-* sample projects
+Summary of technologies that I use and my sample projects
