@@ -27946,13 +27946,16 @@ var Menu = function Menu() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "menu"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://szymonwojcikowski.github.io/techstack"
+    href: "https://szymonwojcikowski.github.io/techstack",
+    title: "The technologies that I use"
   }, "TechStack")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/weekPlanner",
-    target: "blank"
+    target: "blank",
+    title: "WeekPlanner - the project in which I used ES6, SCSS and HTML"
   }, "WeekPlanner")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://szymonwojcikowski.github.io/weekPlannerReactive",
-    target: "blank"
+    target: "blank",
+    title: "ReactiveRecreation - the project in which I used Webpack, React and SCSS"
   }, "ReactiveRecreation")));
 };
 
