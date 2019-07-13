@@ -12,4 +12,8 @@ Summary of technologies that I use:
 * Git + GitHub/GitLab
 * VS Code/Webstorm/Brackets
 
-and my sample projects
+and my sample projects:
+* [HeadToHead](https://szymonwojcikowski.github.io/HeadToHead/ "HeadToHead")
+* [WeekPlanner](https://szymonwojcikowski.github.io/weekPlanner/ "WeekPlanner")
+* [ReactiveRecreation](https://szymonwojcikowski.github.io/weekPlannerReactive/ "WeekPlannerReactive")
+* [SCSS 2d Sky Animation](https://codepen.io/wojcikowski/full/dgvYWZ "Sky Animation")
